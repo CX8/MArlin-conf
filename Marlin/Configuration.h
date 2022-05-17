@@ -1182,7 +1182,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -39.4, -14.5, -1.64 }  //TODO
+#define NOZZLE_TO_PROBE_OFFSET { -39.4, -14.5, -1.643 }  //TODO
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1387,7 +1387,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 220
-#define Y_BED_SIZE 220
+#define Y_BED_SIZE 215
 
 #define X_BED_SIZE_LIMIT_SWITCH_OFFSET -10
 #define X_BED_SIZE_EXTRAROOM 18
@@ -1398,7 +1398,7 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE + X_BED_SIZE_EXTRAROOM
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 250
+#define Z_MAX_POS 235
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
 //#define J_MIN_POS 0
@@ -1574,7 +1574,7 @@
 #define PREHEAT_BEFORE_LEVELING
 #if ENABLED(PREHEAT_BEFORE_LEVELING)
   // #define LEVELING_NOZZLE_TEMP 120   // (°C) Only applies to E0 at this time
-  #define LEVELING_BED_TEMP     50
+  #define LEVELING_BED_TEMP     60
 #endif
 
 /**
